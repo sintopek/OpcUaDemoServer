@@ -25,10 +25,13 @@ if __name__ == "__main__":
     myvar2 = myobj.add_variable(idx, "Variable2", 7.8)
     myobj2 = objects.add_object(idx, "TreeNode2")
     myvar3 = myobj2.add_variable(idx, "Variable3", 9.0)
+    myobj3 = myobj2.add_object(idx, "TreeNode3")
+    myvar4 = myobj3.add_variable(idx, "Variable4", -6.7)
 
     myvar.set_writable()    # Set MyVariable to be writable by clients
     myvar2.set_writable()
     myvar3.set_writable()
+    myvar4.set_writable()
 
     # starting!
     server.start()
